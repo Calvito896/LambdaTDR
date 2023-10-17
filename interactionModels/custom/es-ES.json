@@ -1,0 +1,84 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "language",
+              "elicitationRequired": true,
+              "type": "AMAZON.SearchQuery",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1464158258550.980172308039"
+              }
+            }
+          ],
+          "name": "CustomLanguageIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "language",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "CustomLanguageIntent",
+          "samples": [
+            "dime {language}",
+            "que {language}",
+            "quien {language}",
+            "donde {language}",
+            "hola megamind {language}",
+            "hola chat {language}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "don megamind"
+    },
+    "prompts": [
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "No he entendido lo que has preguntado, recuerda decir hola megamind y decir la pregunta"
+          }
+        ],
+        "id": "Elicit.Slot.1464158258550.980172308039"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Has dicho {language}"
+          }
+        ],
+        "id": "Confirm.Slot.275865884405.756612427235"
+      }
+    ]
+  }
+}

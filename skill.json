@@ -1,0 +1,74 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "es-ES": {
+          "summary": "Alexa skill con la API de CHATGPT integrada",
+          "examplePhrases": [
+            "Alexa, abre  don megamind",
+            "Dime",
+            "ayuda"
+          ],
+          "keywords": [
+            "TDRIZAAN",
+            "CHATGPT",
+            "DONMEGAMIND"
+          ],
+          "name": "TDRIZAAN",
+          "description": "Esta skill  se llama don megamind. Lo unico que tendras que hacer ed decirle alexa que abra don megamind y lo unico que tendras que hacer sera formular tu pregunta.",
+          "smallIconUri": "file://assets/images/es-ES_smallIconUri.png",
+          "largeIconUri": "file://assets/images/es-ES_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "{\"ask_dist_username\":\"\",\"ask_dist_password\":\"\",\"ask_dist_testing_instructions\":\"Sample Testing Instructions.\"}",
+      "category": "NEWS",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:eu-west-1:040477074605:function:3be5ff23-2889-4963-841e-c3ed1f63ca09:Release_0"
+        },
+        "interfaces": [],
+        "locales": {},
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:040477074605:function:3be5ff23-2889-4963-841e-c3ed1f63ca09:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:040477074605:function:3be5ff23-2889-4963-841e-c3ed1f63ca09:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:040477074605:function:3be5ff23-2889-4963-841e-c3ed1f63ca09:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "es-ES": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "shoppingKit": {
+        "isShoppingActionsEnabled": false,
+        "isAmazonAssociatesOnAlexaEnabled": false
+      },
+      "usesPersonalInfo": false
+    }
+  }
+}
